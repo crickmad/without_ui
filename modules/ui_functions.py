@@ -265,12 +265,9 @@ class UIFunctions(MainWindow):
         # MINIMIZE
         self.ui.minimizeAppBtn.clicked.connect(lambda: self.showMinimized())
 
-        # MAXIMIZE/RESTORE
-        #self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.maximize_restore(self))
-
         # CLOSE APPLICATION
         self.ui.closeAppBtn.clicked.connect(lambda: self.close())
-
+        
     def resize_grips(self):
         if Settings.ENABLE_CUSTOM_TITLE_BAR:
             self.left_grip.setGeometry(0, 10, 10, self.height())
@@ -278,5 +275,3 @@ class UIFunctions(MainWindow):
             self.top_grip.setGeometry(0, 0, self.width(), 10)
             self.bottom_grip.setGeometry(0, self.height() - 10, self.width(), 10)
 
-    # ///////////////////////////////////////////////////////////////
-    # END - GUI DEFINITIONS

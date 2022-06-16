@@ -10,7 +10,7 @@ Js2Py==0.71
 MouseInfo==0.1.3
 packaging==21.3
 Pillow==9.0.1
-pip==22.0.4
+pip
 pipwin==0.5.2
 PyAudio==0.2.11
 PyAutoGUI==0.9.52
@@ -56,3 +56,4 @@ opencv-contrib-python
 Numpy
 Pillow
 pynput
+PySimpleGUI
